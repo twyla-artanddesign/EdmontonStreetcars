@@ -1,0 +1,210 @@
+
+body {
+	/* DELETE - nothing here yet, idk */
+}
+
+
+
+
+
+.header-container {
+	width: 100%;
+	max-width: 1400px;
+	display: block;
+	padding-left: 6vw;
+	padding-right: 6vw;
+	padding-top: 2vw;
+	padding-bottom: 1vw;
+}
+
+.container {
+	width: 100vw;
+	display: flex;
+}
+
+/* ROWS */
+.row {
+	display: flex; 				/* Content goes horizonally */
+	flex-wrap: wrap; 			/* Above content goes down to new 'line' if not enough space */
+	align-content: stretch;		/* Content fits height of it's container */
+
+}
+.row-justify-end {
+	justify-content: flex-end;
+}
+
+.row-justify-center {
+	justify-content: center;
+}
+
+.row-justify-between {
+	justify-content: space-between;
+}
+
+.row-align-end {
+	align-items: flex-end;
+}
+
+.row-align-center {
+	align-items: center;
+}
+
+
+
+
+
+/* COLUMNS */
+
+.col {   /*applies to all columns*/
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
+	padding: 0px 0px;
+	box-sizing: border-box;
+
+}
+
+
+.col-lg-1 {   /*applies to individual columns*/
+	max-width: 8.333%;
+}
+
+.col-lg-2 { 
+	flex: 0 0 16.667%;
+	max-width: 16.667%;
+}
+
+.col-lg-3 {
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.col-lg-4 {
+	flex: 0 0 33.333%;
+	max-width: 33.333%;
+}
+
+.col-lg-5 {
+	flex: 0 0 41.667%;
+	max-width: 41.667%;
+}
+
+.col-lg-6 {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+
+.col-lg-7 {
+	flex: 0 0 58.333%;
+	max-width: 58.333%;
+}
+
+.col-lg-8 {
+	flex: 0 0 66.667%;
+	max-width: 66.667%;
+}
+
+.col-lg-9 {
+	flex: 0 0 75%;
+	max-width: 75%;
+}
+
+.col-lg-10 {
+	flex: 0 0 83.333%;
+	max-width: 83.333%;
+}
+
+.col-lg-11 {
+	flex: 0 0 91.667%; 
+	max-width: 91.667%;
+}
+
+.col-lg-12 {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+
+
+/* MOBILE BREAKPOINT */
+
+@media screen and (max-width: 478px) {
+	.row {
+		margin: auto;
+	}
+
+	.col {
+		padding: 0;
+	}
+
+	.col-sm-1 {
+		flex: 0 0 8.33%;
+		max-width: 8.33%;
+	}
+
+	.col-sm-2 {
+		flex: 0 0 16.67%;
+		max-width: 16.67%;
+	}
+
+	.col-sm-3 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.col-sm-4 {
+		flex: 0 0 33.33%;
+		max-width: 33.33%;
+	}
+
+	.col-sm-5 {
+		flex: 0 0 41.67%;
+		max-width: 41.67%;
+	}
+
+	.col-sm-6 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.col-sm-7 {
+		flex: 0 0 58.33%;
+		max-width: 58.33%;
+	}
+
+	.col-sm-8 {
+		flex: 0 0 66.67%;
+		max-width: 66.67%;
+	}
+
+	.col-sm-9 {
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+
+	.col-sm-10 {
+		flex: 0 0 83.33%;
+		max-width: 83.33%;
+	}
+
+	.col-sm-11 {
+		flex: 0 0 91.67%;
+		max-width: 91.67%;
+	}
+
+	.col-sm-12 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	
+
+} /* END MOBILE BREAKPOINT */
+
+
+
+
+
+
+
