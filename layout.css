@@ -4,7 +4,10 @@ body {
 }
 
 
-
+.margin {
+	margin-left: 8%;
+	margin-right: 8%;
+}
 
 
 .header-container {
@@ -13,13 +16,14 @@ body {
 	display: block;
 	padding-left: 6vw;
 	padding-right: 6vw;
-	padding-top: 2vw;
+	padding-top: 1.5vw;
 	padding-bottom: 1vw;
 }
 
 .container {
-	width: 100vw;
+	width: 100%;
 	display: flex;
+	justify-content: center;
 }
 
 /* ROWS */
@@ -59,11 +63,9 @@ body {
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 0%;
-	padding: 0px 0px;
+	padding: 0 1vh;
 	box-sizing: border-box;
-
 }
-
 
 .col-lg-1 {   /*applies to individual columns*/
 	max-width: 8.333%;

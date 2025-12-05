@@ -19,28 +19,28 @@
 
 <body>
 
-	<header class="header-container fill-black">
-		<div class="nav-wrap">
+	<header class="header-container fill-black overflow" style="overflow: hidden; ">
+		<div>
 			<div class="row row-align">
-				<div>
+				<div class="col col-lg-1">
 					<a href="index.html"><img src="Images/Logo.png" class="logo-size"></a>
 				</div>
 
 				<div class="col col-lg-8 sm-hide">
 					<nav>
-						<ul>
+						<ul class="header-padding-1">
 							<li><a href="PlanTrip.html" class="nav-link">Plan a Trip</a></li>
 							<li><a href="Learn.html" class="nav-link">Learn</a></li>
 							<li><a href="OurFleet.html" class="nav-link">Our Fleet</a></li>
-							<li><a href="GetInvolved.html" class="nav-link">Get Involved</a></li>
+							<li><a class="nav-link">Get Involved</a></li>
 
 						</ul>
 					</nav>
 				</div>
 
-				<div>
-					<a href="index.html" class="nav-link-members">Members</a>
-					<a href="index.html" class="button-1 space-around">Donate</a>
+				<div class="header-padding-2">
+					<a class="nav-link-members">Members</a>
+					<a class="button-1 space-left">Donate</a>
 				</div>
 
 			</div>
@@ -51,28 +51,75 @@
 	<main>
 
 	<!-- HERO -->
-		<section class=" container position-relative hero-section-home" style="height: 90vw">
-			<div class="col col-lg-12 hero-box-home position-absolute">
-				<img src="Images/Hero_StreetcarLights.jpg" class="img-full">
+		<section class="container position-relative">
+			<div class="flex-stack hero-section-home display-flex z-index-3">
+				<div class="position-relative">
+					<div class="col col-lg-12 hero-box-home position-absolute">
+						<img src="Images/Hero_StreetcarLights.jpg" class="img-full-vw">
+					</div>
+					<div class="position-relative hero-text-home">
+						<h1>Edmonton Streetcars</h1>
+						<h2>Edmonton Radial Railway Society</h2>
+					</div>
+				</div>
 			</div>
-			<div class="position-relative z-index-1">
-				<h1>Edmonton Streetcars</h1>
-				<h2>Edmonton Radial Railway Society</h2>
-			</div>
-
+			
+				
 			
 		</section>
 
-		<!-- <section class="container position-relative">
-			<div class="position-absolute">
-				<img src="Images/FirstTrip.jpg">
+		<section class="short-img-grid container"> <!-- Grid items should overlap -->
+
+			<div class="short-grid-left">
+				<img src="Images/FirstTrip.jpg" class="img-height-full">
 			</div>
-			<div class="position-relative z-index-1">
-				<h3>ERRS</h3>
-				<p>The Edmonton Radial Railway Society currently boasts the largest fleet of heritage streetcars in Western Canada.<br>We are proud to operate two heritage streetcar routes in Edmonton, Alberta Canada. Our streetcars operate both for fun – and to show Edmontonians and visitors a glimpse of our past.<br>We also operate a museum, maintain relevant archives and reach out to the public through this website and our social media pages.</p>
-				<a href="Learn.html" class="button-2">Start Learning</a>
+
+			<div class="short-grid-right">
+				<div class="narrow-txt-box">
+					<h3>ERRS</h3>
+					<p>The Edmonton Radial Railway Society currently boasts the largest fleet of heritage streetcars in Western Canada.<br>We are proud to operate two heritage streetcar routes in Edmonton, Alberta Canada. Our streetcars operate both for fun – and to show Edmontonians and visitors a glimpse of our past.<br>We also operate a museum, maintain relevant archives and reach out to the public through this website and our social media pages.</p>
+					<div class="small-top-padding">
+						<a href="Learn.html" class="button-2">Start Learning</a>
+					</div>
+					
+				</div>
+					
 			</div>
-		</section> -->
+			
+				
+		</section>
+
+
+		<!-- ROUTES SECTION -->
+		<section class="margin space-above">
+
+			<h2 class="h1 text-center">Routes</h2>
+								
+			<div class="container">
+				<div class="row">
+					<div class="col col-lg-6">
+						<h3 class="routes-txt-box-1 txt-black">Fort Edmonton Park</h3>
+						<div>
+							<img src="Images/FortEdmontonPark_1.png" class="img-full routes-img-1">
+						</div>
+						<p class="route-map-link">See on Map</p>
+					</div>
+					
+					<div class="col col-lg-6">
+						<h3 class="routes-txt-box-2 txt-black">High-Level Bridge</h3>
+						<div>
+							<img src="Images/HighLevelBridge_1.jpeg" class="img-full routes-img-2 route-hover">
+						</div>
+						<p class="route-map-link">See on Map</p>
+					</div>
+				</div>
+			
+			</div>
+			<div class="button-centered">
+				<a href="PlanTrip" class="button-1 half-space-above space-below">Plan a Trip</a>
+			</div
+				
+		</section>
 
 	</main>
 	
@@ -83,25 +130,30 @@
 			</div>
 			
 			<div class="span-3">
-				<p class="txt-light">Edmonton Radial Railway Society<br>P.O. Box 76057 Southgate P.0.<br>Edmonton, Alberta T6H 5Y7</p>
+				<p class="txt-light">Edmonton Radial Railway Society<br>P.O. Box 76057 Southgate P.0<br>Edmonton, Alberta T6H 5Y7</p>
 			</div>
 
 			<div class="span-3">
-				<a href="PlanTrip.html" class="txt-light">Plan a Trip</a>
-				<a href="Learn.html" class="txt-light">Learn</a>
+				<ul>
+					<li><a href="PlanTrip.html" class="txt-light ">Plan a Trip</a></li>
+					<li><a href="Learn.html" class="txt-light">Learn</a></li>
+				</ul>
 			</div>
-			<div class="span-3">
-				<a href="GetInvolved.html" class="txt-light">Get Involved</a>
-				<a class="txt-light">Donate</a>
+			<div class="span-3 display-flex">
+				<ul>
+					<li><a class="txt-light">Get Involved</a></li>
+					<li><a class="txt-light">Donate</a></li>
+				</ul>
 			</div>
-			<div class="span-3">
-				<a href="FAQ.html" class="txt-light">FAQs</a>
+			<div class="span-3 footer-padding">
+				<a class="txt-light">FAQs</a>
 			</div>
-			<div class="span-2">
-				<a href="Members.html" class="txt-Members">For Members</a>
+			<div class="span-2 footer-padding">
+				<a class="txt-Members">For Members</a>
 			</div>
 
 		</div>
+		<p class="txt-gold">The Edmonton Radial Railway Society operates on Treaty 6 territory, a traditional meeting grounds, gathering place, and travelling route to the Cree, Saulteaux, Blackfoot, Métis, Dene and Nakota Sioux. We acknowledge all the many First Nations, Métis, and Inuit whose footsteps have marked these lands for centuries.</p>
 	</footer>
 
 
