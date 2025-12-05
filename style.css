@@ -52,7 +52,6 @@ h3 {
 	letter-spacing: 6%;
 	font-weight: 500;
 	color: #B08230;
-
 }
 
 p  {
@@ -295,6 +294,16 @@ footer li {
 	max-height: 100%;
 }
 
+.img-box {
+	width: 100%;
+	border-radius: .5vw;
+	overflow: hidden;
+}
+
+.img-corners {
+	object-fit: cover;
+}
+
 
 
 /* TEXT BOXES */
@@ -376,12 +385,6 @@ footer li {
 
 
 
-/* CLEAN-UP */
-
-.overflow {
-	overflow: hidden;
-}
-
 
 
 
@@ -429,29 +432,29 @@ footer li {
 .routes-txt-box-1 {
 	text-align: center;
 	background-color: #7997BE;
-	padding: 5vh 3vw;
+	padding: 5vh 20px;
 	margin-bottom: 2vh;
 	/* margin-right: 1vw; */
-	border-radius: 1vw 1vw 0 0;
+	border-radius: .5vw .5vw 0 0;
 }
 
 .routes-txt-box-2 {
 	text-align: center;
 	background-color: #FDDDAA;
-	padding: 5vh 3vw;
+	padding: 5vh 20px;
 	margin-bottom: 2vh;
 	/* margin-left: 1vw; */
-	border-radius: 1vw 1vw 0 0;
+	border-radius: .5vw .5vw 0 0;
 }
 
 .routes-img-1 {
 	/* margin-right: 1vw; */
-	border-radius: 0 0 .9vw .9vw;
+	border-radius: 0 0 .5vw .5vw;
 }
 
 .routes-img-2 {
 	/* margin-left: 1vw; */
-	border-radius: 0 0 .9vw .9vw;
+	border-radius: 0 0 .5vw .5vw;
 }
 
 .route-hover:hover {

@@ -3,10 +3,9 @@ body {
 	/* DELETE - nothing here yet, idk */
 }
 
-
 .margin {
-	margin-left: 8%;
-	margin-right: 8%;
+	margin-left: 6vw;
+	margin-right: 6vw;
 }
 
 
@@ -22,7 +21,7 @@ body {
 
 .container {
 	width: 100%;
-	display: flex;
+	display: block;
 	justify-content: center;
 }
 
