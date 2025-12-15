@@ -20,7 +20,7 @@
 		<div> 
 			<div class="row row-align sm-justify-space-between sm-align-center">
 				<div class="col col-lg-1">
-					<a href="index.html"><img src="Images/Logo.png" class="logo-size"></a>
+					<a href="index.html"><img src="Images/Logo.png" class="logo-size" alt="ERRS logo icon"></a>
 				</div>
 
 				<div class="col col-lg-8 sm-hide">
@@ -53,41 +53,52 @@
 	</header>
 
 	<main>
-		<section class="container position-relative">
-				<div class="flex-stack hero-section-otherpages display-flex z-index-3">
-					<div class="position-relative">
-						<div class="col col-lg-12 hero-box-learn position-absolute">
-							<img src="Images/Hero_Passengers.JPG" class="img-full-vw" alt="">
-						</div>
-						<div class="position-relative hero-text-otherpages">
-							<h1>Plan a Trip</h1>
-						</div>
-					</div>
-				</div>
 
-				<div class="row row-justify-center">
-					<div class="col col-lg-5 text-center">
-						<h3>Celebrate Events, Anniversaries and more on a Streetcar!</h3>
+		<!-- HERO -->
+		<section class="container position-relative">
+			<div class="flex-stack hero-section-otherpages display-flex z-index-3">
+				<div class="position-relative">
+					<div class="col col-lg-12 hero-box-learn position-absolute">
+						<img src="Images/Hero_Passengers.JPG" class="img-full-vw" alt="A photo of a streetcar conductor hole punching a ticket stub">
 					</div>
-					
+					<div class="position-relative hero-text-otherpages">
+						<h1>Plan a Trip</h1>
+					</div>
 				</div>
-				<div class="button-centered">
-					<a href="" class="button-1 double-space-below">Charter a Streetcar</a>
+			</div>
+
+
+			<!-- CHARTER A STREETCAR CTA -->
+
+			<div class="row row-justify-center">
+				<div class="col col-lg-5 text-center col-sm-10">
+					<h3>Celebrate Events, Anniversaries and more on a Streetcar!</h3>
 				</div>
+				
+			</div>
+			<div class="button-centered">
+				<a href="" class="button-1 double-space-below">Charter a Streetcar</a>
+			</div>
 			
-			</section>
+		</section>
+
+
+		<!-- OPERATING SEASON SECTION -->
 
 		<section>
 			<h2 class="h1 text-center">Regular Operating Season</h2>
 			<div class="row row-justify-center">
-				<div class="col col-lg-7 text-center">
+				<div class="col col-lg-7 text-center col-sm-10">
 					<h3>The High Level Bridge Streetcar operates Thursday through Monday from Friday, May 15, 2026 until Monday, September 7. After that, service will be Friday through Sunday only, until Monday October 12, 2026, when our season ends.</h3>
 				</div>
 			</div>
 
 		</section>
 
-		<section class="display-flex justify-content-center space-below">
+
+		<!-- ROUTE MAPS SECTION -->
+
+		<section class="display-flex justify-content-center space-below sm-hide">
 			<div>
 				<h2 class="h1 text-center space-above half-space-below">Routes</h2>
 				<div class="route-map-box fill-light">
@@ -99,11 +110,11 @@
 						<label for="fe-park-route" class="h3 txt-uppercase">Fort Edmonton Park</label>
 
 						<div class="hl-b-map map-box route-selector-span position-relative">
-							<img src="Images/HighLevelBridge_Map.png" class="img-full position-relative z-index-3">
+							<img src="Images/HighLevelBridge_Map.png" class="img-full position-relative z-index-3" alt="A map view of the High Level Bridge streetcar route">
 						</div>
-					<!-- !!!!! REPLACE HLB MAP!!! -->
+					<!-- ! The site doesn't have a map for this route, so I couldn't change it... ! -->
 						<div class="fep-map map-box route-selector-span position-relative">
-							<img src="Images/HighLevelBridge_Map.png" class="img-full position-relative z-index-3">
+							<img src="Images/HighLevelBridge_Map.png" class="img-full position-relative z-index-3" alt="A map view of the Fort Edmonton Park streetcar route">
 						</div>
 
 					</div>
@@ -112,20 +123,40 @@
 				
 		</section>
 
-		<!-- PLAN YOUR ROUTE -->
-		<section class="fill-light">
+		<!-- PLAN YOUR ROUTE SECTION -->
+		<section class="fill-light sm-space-above">
 			<h2 class="h1 text-center half-padding-above half-space-below txt-black">Plan Your Route</h2>
 			<div class="margin">
-				<form class="row">
-					<div class="calendar-box col col-lg-5">
-						<div class="inline-flex justify-space-around">
-							<div class="calendar-month-arrow-box"><p class="h2 txt-black"><</p>
-								</div>
+				<form class="row sm-justify-content-center">
+
+					<!-- Mobile Direction/Route Radio Buttons -->
+					<div class="col col-lg-7 col-sm-12 smaller-space-above sm-show">
+						<div class="row">
+							<div class="col col-lg-12 align-flex-start">
+								<input id="hlb-route" type="radio" name="route-planner" class="radio-buttons">
+								<img src="Images/checked.png" class="radio-checked radio-button-route-planner hover-pointer" alt="The radio button for the High Level Bridge Route is selected"><img src="Images/unchecked.png" class="radio-unchecked radio-button-route-planner hover-pointer" alt="A radio button to select the High Level Bridge Route Option"><label for="hlb-route" class="h3 txt-black line-height-100 hover-pointer">High-Level Bridge Route</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col col-lg-12 align-flex-start">
+								<input id="fep-route" type="radio" name="route-planner" class="radio-buttons radio-button-route-planner">
+								<img src="Images/checked.png" class="radio-checked radio-button-route-planner hover-pointer" alt="The radio button for the Fort Edmonton Park Route is selected"><img src="Images/unchecked.png" class="radio-unchecked radio-button-route-planner hover-pointer" alt="A radio button to select the Fort Edmonton Park Route Option">
+								<label for="fep-route" class="h3 txt-black line-height-100 hover-pointer">Fort Edmonton Park</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- Calendar Picker -->
+					<div class="calendar-box col col-lg-5 col-sm-11">
+						<div class="inline-flex justify-space-around width-100">
+							<img src="Images/ArrowLeft.svg" class="arrow-margin" alt="Arrow to switch to previous month">
+														
 							<div class="calendar-month-text">
 								<p class="line-height-100">November, 2025</p>
-								</div>
-							<div class="calendar-month-arrow-box"><p class="h2 txt-black">></p>
 							</div>
+
+							<img src="Images/ArrowRight.svg" class="arrow-margin" alt="Arrow to switch to next month">
+							
 						</div>
 								
 							
@@ -254,108 +285,115 @@
 							</div>
 						</div> 
 					</div>
-				
-					<div class="col col-lg-7">
-						<div class="row">
+					
+					<div class="col col-lg-7 col-sm-12 smaller-space-above">
+
+						<!-- Desktop Direction/Route Radio Buttons --> 
+	<!-- !!!!!!! Why are these radio buttons not clickable for desktop??? !!!!!! -->
+						<div class="row sm-hide">
 							<div class="col col-lg-12 align-flex-start">
 								<input id="hlb-route" type="radio" name="route-planner" class="radio-buttons">
-								<img src="Images/checked.png" class="radio-checked radio-button-route-planner"><img src="Images/unchecked.png" class="radio-unchecked radio-button-route-planner"><label for="hlb-route" class="h3 txt-black line-height-100">High-Level Bridge Route</label>
+								<img src="Images/checked.png" class="radio-checked radio-button-route-planner hover-pointer" alt="The radio button for the High Level Bridge Route is selected"><img src="Images/unchecked.png" class="radio-unchecked radio-button-route-planner hover-pointer" alt="A radio button to select the High Level Bridge Route Option"><label for="hlb-route" class="h3 txt-black line-height-100 hover-pointer">High-Level Bridge Route</label>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row sm-hide">
 							<div class="col col-lg-12 align-flex-start">
 								<input id="fep-route" type="radio" name="route-planner" class="radio-buttons radio-button-route-planner">
-								<img src="Images/checked.png" class="radio-checked radio-button-route-planner"><img src="Images/unchecked.png" class="radio-unchecked radio-button-route-planner">
-								<label for="fep-route" class="h3 txt-black line-height-100">Fort Edmonton Park</label>
+								<img src="Images/checked.png" class="radio-checked radio-button-route-planner hover-pointer" alt="The radio button for the Fort Edmonton Park Route is selected"><img src="Images/unchecked.png" class="radio-unchecked radio-button-route-planner hover-pointer" alt="A radio button to select the Fort Edmonton Park Route Option">
+								<label for="fep-route" class="h3 txt-black line-height-100 hover-pointer">Fort Edmonton Park</label>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col col-lg-11 align-flex-start time-note-input-box justify-space-between justify-content-center align-items-center">
+
+						<!-- Time pickers -->
+						<div class="row sm-no-margin-top">
+							<div class="col col-lg-11 align-flex-start time-note-input-box justify-space-between justify-content-center align-items-center col-sm-12">
 								<p class="txt-uppercase line-height-100">Between</p>
 								<div class=" justify-content-center align-items-center">
 									<input type="time" name="time-start" class="p time-box" value="10:00">
 
-									<input id="am1" type="radio" name="time-start" class="radio-buttons am-button" checked>
-									<label for="am" class="p txt-light inline-block">AM</label> <!-- why do you have to put the cursor way offset in order to activate the hover state or click on this button? -->
+									<input id="am1" type="radio" name="time-start" class="radio-buttons am-button sm-hide" checked>
+									<label for="am" class="p txt-light inline-block sm-hide">AM</label> 
 
-									<input id="pm1" type="radio" name="time-start" class="radio-buttons pm-button">
-									<label for="pm1" class="p txt-light inline-block">PM</label>
+									<input id="pm1" type="radio" name="time-start" class="radio-buttons pm-button sm-hide">
+									<label for="pm1" class="p txt-light inline-block sm-hide">PM</label>
 								</div>
 								<p class="txt-uppercase no-line-height ">and</p>
 								<div class=" justify-content-center align-items-center">
 									<input type="time" name="time-end" class="p time-box" value="03:30">
 
-									<input id="am2" type="radio" name="time-end" class="radio-buttons am-button">
-									<label for="am2" class="p txt-light inline-block">AM</label>
+									<input id="am2" type="radio" name="time-end" class="radio-buttons am-button sm-hide">
+									<label for="am2" class="p txt-light inline-block sm-hide">AM</label>
 
-									<input id="pm2" type="radio" name="time-end" class="radio-buttons pm-button" checked>
-									<label for="pm2" class="p txt-light inline-block">PM</label>
+									<input id="pm2" type="radio" name="time-end" class="radio-buttons pm-button sm-hide" checked>
+									<label for="pm2" class="p txt-light inline-block sm-hide">PM</label>
 								</div>
 								
 							</div>
 						</div>
+						<!-- Disclaimer Note -->
 						<div class="row">
 							<div class="col col-lg-11 align-flex-start time-note-input-box justify-space-around">
 								<p>Note: Availability is subject to rider traffic. Tickets may not always be available. Please be prepared for the streetcars to be busy, especially on holidays.</p>
 							</div>
 						</div>
+						<!-- Submit Button's Label -->
 						<div class="row">
-							<div class="col col-lg-11 align-flex-start ">
+							<div class="col col-lg-11 col-sm-12 align-flex-start sm-justify-content-center">
 								<label for="route-planner-section" class="button-adjust button-1">Check Streetcar Routes</label>
 							</div>
 						</div>
 						
 					</div>
 					
-						
+					<!-- Submit Button -->
 					<input id="route-planner-section" type="radio" name="show-next-section" class="radio-buttons">
 					
-
+					<!-- Results Section (If shown) -->
 					<div class="col col-lg-12 hidden-section results-container">
-						<div class="row streetcar-and-direction-box">
-							<h3 class="txt-black">Melbourne 930 - High Level Bridge - to Downtown</h3>
+						<div class="row streetcar-and-direction-box sm-justify-content-center">
+							<h3 class="txt-black sm-text-center">Melbourne 930 - High Level Bridge - to Downtown</h3>
 						</div>
 
 						<div class="row">
-							<p class="padding-left">Thursday, November 27, 2025  –  2:30 - 3:00 PM</p>
+							<p class="padding-left sm-text-center">Thursday, November 27, 2025  –  2:30 - 3:00 PM</p>
 						</div>
 
 						<div class="row margin-left justify-space-between">
-							<p class="text-results-box text-results-width-more"><b>Government Center Stop</b></p>
-							<p class="text-results-box text-results-width">Arrival Time: <b>2:30</b> PM</p>
-							<p class="text-results-box text-results-width">Departure Time: <b>2:34</b> PM</p>
+							<p class="text-results-box text-results-width-more sm-text-center"><b>Government Center Stop</b></p>
+							<p class="text-results-box text-results-width sm-text-center">Arrival Time: <b>2:30</b> PM</p>
+							<p class="text-results-box text-results-width sm-text-center sm-text-results-slightly-wider">Departure Time: <b>2:34</b> PM</p>
 						</div>
 
-						<div class="row quarter-space-below margin-left justify-space-between">
-							<p class="text-results-box text-results-width-more"><b>Jasper Plaza Stop</b></p>
-							<p class="text-results-box text-results-width">Arrival Time: <b>2:36</b> PM</p>
-							<p class="text-results-box text-results-width">Departure Time: <b>2:40</b> PM</p>
+						<div class="row quarter-space-below margin-left justify-space-between sm-space-above">
+							<p class="text-results-box text-results-width-more sm-text-center"><b>Jasper Plaza Stop</b></p>
+							<p class="text-results-box text-results-width sm-text-center">Arrival Time: <b>2:36</b> PM</p>
+							<p class="text-results-box text-results-width sm-text-center sm-text-results-slightly-wider">Departure Time: <b>2:40</b> PM</p>
 						</div>
 
-						<div class="row streetcar-and-direction-box">
-							<h3 class="txt-black">Melbourne 930 - High Level Bridge - to Old Strathcona</h3>
+						<div class="row streetcar-and-direction-box sm-space-above">
+							<h3 class="txt-black sm-text-center sm-text-center">Melbourne 930 - High Level Bridge - to Old Strathcona</h3>
 						</div>
 
 						<div class="row">
-							<p class="padding-left ">Thursday, November 27, 2025  –  2:30 - 3:00 PM</p>
+							<p class="padding-left sm-text-center">Thursday, November 27, 2025  –  2:30 - 3:00 PM</p>
 						</div>
 
-						<div class="row margin-left justify-space-between">
-							<p class="text-results-box text-results-width-more"><b>Jasper Plaza Stop</b></p>
-							<p class="text-results-box text-results-width">Arrival Time: <b>2:40</b> PM</p>
-							<p class="text-results-box text-results-width">Departure Time: <b>2:45</b> PM</p>
+						<div class="row margin-left justify-space-between sm-space-above">
+							<p class="text-results-box text-results-width-more sm-text-center"><b>Jasper Plaza Stop</b></p>
+							<p class="text-results-box text-results-width sm-text-center">Arrival Time: <b>2:40</b> PM</p>
+							<p class="text-results-box text-results-width sm-text-center sm-text-results-slightly-wider">Departure Time: <b>2:45</b> PM</p>
 						</div>
 
-						<div class="row margin-left justify-space-between">
-							<p class="text-results-box text-results-width-more"><b>Government Center Stop</b></p>
-							<p class="text-results-box text-results-width">Arrival Time: <b>2:47</b> PM</p>
-							<p class="text-results-box text-results-width">Departure Time: <b>2:50</b> PM</p>
+						<div class="row margin-left justify-space-between sm-space-above">
+							<p class="text-results-box text-results-width-more sm-text-center"><b>Government Center Stop</b></p>
+							<p class="text-results-box text-results-width sm-text-center">Arrival Time: <b>2:47</b> PM</p>
+							<p class="text-results-box text-results-width sm-text-center sm-text-results-slightly-wider">Departure Time: <b>2:50</b> PM</p>
 						</div>
 
-						<div class="row margin-left justify-space-between">
-							<p class="text-results-box text-results-width-more"><b>Strathcona Stop</b></p>
-							<p class="text-results-box text-results-width">Arrival Time: <b>2:47</b> PM</p>
-							<p class="text-results-box text-results-width">Departure Time: <b>2:50</b> PM</p>
+						<div class="row margin-left justify-space-between sm-space-above">
+							<p class="text-results-box text-results-width-more sm-text-center"><b>Strathcona Stop</b></p>
+							<p class="text-results-box text-results-width sm-text-center">Arrival Time: <b>2:47</b> PM</p>
+							<p class="text-results-box text-results-width sm-text-center sm-text-results-slightly-wider">Departure Time: <b>2:50</b> PM</p>
 						</div>
 
 					</div>
@@ -370,16 +408,17 @@
 				
 		</section>
 
+		<!-- FARES SECTION -->
 		<section class="double-space-above space-below">
 			<h2 class="h1 text-center half-space-below">Fares</h2>
 			<div class="short-img-grid container">
-				<div class="short-grid-left">
-					<img src="Images/Fares_1.JPG" class="img-height-full max-h-50">
+				<div class="short-grid-left fares-img-shift-1">
+					<img src="Images/Fares_1.JPG" class="img-height-full max-h-50 fares-img-shift-2" alt="A photo of a conductor checking a passenger's ticket">
 				</div>
 
 				<div class="short-grid-right">
 					<div class="narrow-txt-box">
-						<p><b>We accept cash only.</b> <br><br>Tickets are purchased with cash only from the Conductor and used at any time during the season. We do not accept credit, debit, or mobile payments. Tickets are first come, first serve and cannot be purchased or reserved in advance.<br><br>Stop-overs are permitted; the return portion of your round trip may be taken on any date, at any of the scheduled times.<br><br><b>Fares</b></p>
+						<p class="sm-bigger-space-above"><b>We accept cash only.</b> <br><br>Tickets are purchased with cash only from the Conductor and used at any time during the season. We do not accept credit, debit, or mobile payments. Tickets are first come, first serve and cannot be purchased or reserved in advance.<br><br>Stop-overs are permitted; the return portion of your round trip may be taken on any date, at any of the scheduled times.<br><br><b>Fares</b></p>
 						<ul class="p">
 							<li><b>Age 5</b> and under (non-field trips): <b>Free</b></li>
 							<li><b>Age 6 and over</b>: <b>$10.00</b> (round-trip) or <b>$5.00</b> (one-way)</li>
@@ -393,18 +432,21 @@
 				
 		</section>
 
+
+		<!-- PARKING SECTION -->
+
 		<section class="double-space-above double-space-below">
 
 			<h2 class="h1 text-center half-space-below">Parking</h2>
 
 			<div class="short-img-grid container">
 				<div class="short-grid-left">
-					<img src="Images/Parking.jpg" class="img-height-full">
+					<img src="Images/Parking.jpg" class="img-height-full sm-width-100" alt="A photograph of a parking lot near an ERRS streetcar destination">
 				</div>
 
 				<div class="short-grid-right">
 					<div class="narrow-txt-box">
-						<h3>Strathcona Streetcar Barn & Museum Stop</h3>
+						<h3 class="sm-bigger-space-above">Strathcona Streetcar Barn & Museum Stop</h3>
 						<p>Zone 9200<br>Google Maps: 8403 104 Street</p>
 
 						<h3>Government Centre Stop</h3>
@@ -418,12 +460,15 @@
 			</div>
 		</section>
 
+
+		<!-- ACCESSIBILITY SECTION -->
+
 		<section class="margin double-space-aboce double-space-below">
-			<h2 class="h1 text-center half-space-below">Accessibiliity</h2>
+			<h2 class="h1 text-center half-space-below">Accessibility</h2>
 			<div class="container">
-					<div class="row quarter-space-below">
+					<div class="row quarter-space-below sm-justify-content-center">
 						
-						<div class="col col-lg-4">
+						<div class="col col-lg-4 col-sm-11">
 							<h3 class="acessibility-txt-box1 txt-uppercase line-height-100">Wheelchairs</h3>
 							<div class="acessibility-txt-box2">
 								<div class="row">
@@ -439,7 +484,7 @@
 						
 							
 						
-						<div class="col col-lg-4">
+						<div class="col col-lg-4 col-sm-11">
 							<h3 class="acessibility-txt-box1 txt-uppercase line-height-100">Strollers</h3>
 							<div class="acessibility-txt-box2">
 								<div class="acessibility-txt-box2">
@@ -455,7 +500,7 @@
 							
 						</div>
 				
-						<div class="col col-lg-4">
+						<div class="col col-lg-4 col-sm-11">
 							<h3 class="acessibility-txt-box1 txt-uppercase line-height-100">Service Animals</h3>
 							<div class="acessibility-txt-box2">
 								<div class="row">
@@ -480,7 +525,7 @@
 	<footer class="fill-black">
 		<div class="footer-grid">
 			<div class="span-1">
-				<img src="Images/Logo.png" class="logo-size logo-margin">
+				<img src="Images/Logo.png" class="logo-size logo-margin" alt="ERRS logo icon">
 			</div>
 			
 			<div class="span-3">

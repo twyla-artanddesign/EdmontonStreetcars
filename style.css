@@ -621,6 +621,10 @@ nav li {
 
 /* ROUTE PLANNER FORM */
 
+.width-100 {
+	width: 100%;
+}
+
 .calendar-box {
 	padding-top: 3vw;
 	padding-right: 1vw;
@@ -640,6 +644,10 @@ nav li {
 	margin-bottom: 2vw;
 	border-radius: 0.4vw;
 }
+
+.arrow-margin {
+		margin-top: -20px;
+	}
 
 .calendar-month-arrow-box {
 	height: 6vh;
@@ -739,6 +747,7 @@ nav li {
 
 }
 
+
 #hlb-route:not(:checked) ~ .radio-checked {
 	display: none;
 }
@@ -765,6 +774,10 @@ nav li {
 
 #fep-route:not(:checked) ~ .radio-unchecked {
 	display: inline-block;
+}
+
+.hover-pointer:hover {
+	cursor: pointer;
 }
 
 
@@ -1461,7 +1474,9 @@ footer li {
 
 
 
-
+.sm-show {
+	display: none;
+}
 
 .line {
 	width: 100%;
@@ -1611,6 +1626,29 @@ footer li {
 		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 	}
 
+	.calendar-month-text {
+		width: 39vw;
+		align-content: center;
+	}
+
+	.arrow-margin {
+		margin-top: -10px;
+	}
+
+	.time-note-input-box {
+		max-width: calc(100vw - 23%);
+		min-width: calc(100vw - 23%);
+		margin-left: 2vw;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.time-box {
+		padding-left: .5em;
+		padding-right: .5em;
+		border-radius: .5vw;
+	}
+
 	.routes-txt-box-1 {
 		margin-right: auto;
 	}
@@ -1640,8 +1678,49 @@ footer li {
 		margin: 0;
 	}
 
+	.fares-img-shift-1 {
+		height: 60vh;
+	}
+
+	.fares-img-shift-2 {
+		height: 100%;
+		position: relative;
+	}
+
 	.blogs-img-box {
 		margin-bottom: 13vw;
+	}
+
+	.streetcar-and-direction-box {
+		width: 72%;
+		height: 7em;
+		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 20px), 50% 100%, 0% calc(100% - 20px));
+	}
+
+	.acessibility-txt-box1 {
+		background-color: #B08230;
+		color: #F8F7E8;
+		margin-top: 0;
+	}
+
+	.acessibility-txt-box2 {
+		margin-bottom: 6vh;
+		padding-bottom: 0;
+		height: auto;
+	}
+
+	.text-results-box {
+		padding-left: .5em;
+		padding-right: .5em;
+		width: 30vw;
+	}
+
+	.text-results-width-more {
+		width: 70vw;
+	}
+
+	.sm-text-results-slightly-wider {
+		width: 35vw;
 	}
 
 
@@ -1747,6 +1826,10 @@ footer li {
 		margin-top: -2em;
 	}
 
+	.sm-no-margin-top {
+		margin-top: 0;
+	}
+
 	.sm-no-padding {
 		padding: 0;
 	}
@@ -1763,6 +1846,11 @@ footer li {
 		margin-left: 22%;
 	}
 
+	.margin-left {
+		padding-left: 2em;
+		padding-right: 1em;
+	}
+
 	.sm-double-space-above {
 		margin-top: -8vh;
 	}
@@ -1773,6 +1861,10 @@ footer li {
 
 	.smaller-space-above {
 		margin-top: 3vh;
+	}
+
+	.sm-bigger-space-above {
+		margin-top: 8vh;
 	}
 
 	.space-above { /* Unchanged so far */
@@ -1851,6 +1943,20 @@ footer li {
 
 
 	/* OTHER */
+
+	.radio-checked {
+		font-size: 25px;
+		margin-left: -3vw;
+	}
+
+	.radio-unchecked {
+		font-size: 25px;
+		margin-left: -3vw;
+	}
+
+	.sm-show {
+		display: block;
+	}
 
 	.sm-hide {
 		display: none;
