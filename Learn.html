@@ -17,8 +17,8 @@
 </head>
 <body>
 	<header class="header-container fill-black">
-		<div>
-			<div class="row row-align">
+		<div> 
+			<div class="row row-align sm-justify-space-between sm-align-center">
 				<div class="col col-lg-1">
 					<a href="index.html"><img src="Images/Logo.png" class="logo-size"></a>
 				</div>
@@ -35,11 +35,18 @@
 					</nav>
 				</div>
 
-				<div class="header-padding-2">
+				<div class="header-padding-2 sm-hide">
 					<a class="nav-link-members">Members</a>
 					<a class="button-1 space-left">Donate</a>
 				</div>
 
+				<div class="hamburger"> 
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+
+				
 			</div>
 		</div>
 		
@@ -49,30 +56,37 @@
 	<!-- SECONDARY NAV --> 
 	<!-- Learned from https://dev-bay.com/css-show-hide-without-javascript/ + several other places to improve the basic nav/page selector -->
 	<div class="page-selector-grid" >
-		<input id="history" type="radio" name="learn-page" class="radio-buttons" checked>	
-		<label for="history" class="h2">Our History</label>
+		<input id="history" type="radio" name="learn-page" class="radio-buttons sm-hide" checked>	
+		<label for="history" class="h2 sm-hide">Our History</label>
 		
 
-		<input id="streetcars" type="radio" name="learn-page" class="radio-buttons">	
-		<label for="streetcars" class="h2">Streetcars</label>
+		<input id="streetcars" type="radio" name="learn-page" class="radio-buttons sm-hide">	
+		<label for="streetcars" class="h2 sm-hide">Streetcars</label>
 		
 
-		<input id="timeline" type="radio" name="learn-page" class="radio-buttons">	
-		<label for="timeline" class="h2">Timeline</label>
+		<input id="timeline" type="radio" name="learn-page" class="radio-buttons sm-hide">	
+		<label for="timeline" class="h2 sm-hide">Timeline</label>
 
 
-		<input id="hl-bridge" type="radio" name="learn-page" class="radio-buttons">	
-		<label for="hl-bridge" class="h2">High Level Bridge</label>
+		<input id="hl-bridge" type="radio" name="learn-page" class="radio-buttons sm-hide">	
+		<label for="hl-bridge" class="h2 sm-hide">High Level Bridge</label>
 		
 
-		<input id="blogs" type="radio" name="learn-page" class="radio-buttons">	
-		<label for="blogs" class="h2">Blogs</label>
+		<input id="blogs" type="radio" name="learn-page" class="radio-buttons sm-hide">	
+		<label for="blogs" class="h2 sm-hide">Blogs</label>
+
+		<div class="page-selector-menu justify-content-center sm-position-relative z-index-3">
+			<h1 class="h2 txt-light text-center sm-position-relative">. . .</h2>
+		</div>
+		<div class="page-selector-dropdown justify-content-center sm-position-relative z-index-3">
+			<h1 class="h2 txt-black text-center sm-position-relative txt-uppercase half-padding-above">Streetcars</h2>
+		</div>
 
 
-
-		<main class="history-pg pg-selector-span position-relative">
+		<!-- OUR HISTORY PAGE (if showing) -->
+		<main class="history-pg pg-selector-span position-relative fix-margin sm-z-index-2"> 
 			<!-- HERO -->
-			<section class="container position-relative z-index-3">
+			<section class="container position-relative z-index-3 history-pg-adjustment">
 				<div class="flex-stack hero-section-learn display-flex">
 					<div class="position-relative">
 						<div class="col col-lg-12 hero-box-learn position-absolute">
@@ -86,32 +100,37 @@
 			
 			</section>
 
-			<section class="container space-above position-relative z-index-2">
-				<div class="row margin">
-					<div class="col col-lg-5 long-txt-box ourhistory-top-adjustment">
-						<h3>How it all Began</h3>
+
+			<!-- HOW IT BEGAN SECTION -->
+
+			<section class="container space-above position-relative z-index-2 sm-section-history"> 
+				<div class="row margin sm-justify-content-center">
+					<div class="col col-lg-5 long-txt-box ourhistory-top-adjustment col-sm-10">
+						<h3 class="sm-text-center">How it all Began</h3>
 						<p>Streetcar service in Edmonton ended in September 1951, when all but one car were scrapped or sold. <br><br>The preserved car #1 sat outside the Cromdale car barn for over a decade and suffered severe damage from weather and vandalism. It was not until 1964 that first efforts were made towards restoration to showcase the artifact in the 1967 Centennial Parade. <br><br>Much restoration was required to make #1 operational again under its own power. In 1979 trips across the High Level Bridge (with the help of a diesel generator) were organised to celebrate Edmonton's 75th anniversary during the Thanksgiving Weekend. <br><br>As a result of this success, the Edmonton Radial Railway Society (ERRS) was formed and incorporated as an Alberta Society in early 1980. <br><br>The development of Fort Edmonton Park called for a streetcar line in the Park and an agreement between the Fort Edmonton Foundation, the ERRS and the City of Edmonton was reached. <br><br>In 1981 streetcar #1 operated briefly over the railway tracks using a diesel generator to provide the power. Over the next three years the current track system and overhead lines were constructed. <br><br>On June 10, 1984 members of the ERRS started regular streetcar service at Fort Edmonton Park. Since these early days a number of displaced streetcar bodies were found and brought back after having served as cottages, pig barns or even roadside diners. ERRS members set to work and made sure that more restored cars would join the fleet. <br><br>Edmonton Radial Railway Streetcar #1 was closely followed by Edmonton Streetcar #42. The body of this vehicle served for many years as a cottage near Sylvan Lake before being recovered and restored by ERRS members. This car now carries the main workload at Fort Edmonton Park. <br><br>The most modern streetcars ever to operate in our City were five steel bodied cars, delivered in 1930 by the Ottawa Car Manufacturing Co. The only survivor is car #80, the body of which found further use in British Columbia as a roadside diner in Dawson Creek and later as a farm building in Fort St. John. 20 years of hard volunteer work have turned the car into as new condition, making it the pride of our fleet. Two cars from Ontario (Toronto Suburban #24 and Toronto PCC#4612) presently complete the fleet at Fort Edmonton Park. Further restoration projects are well under way. <br><br>Every year members volunteer between 12,000 and 15,000 hours to keep restoring more cars. <br><br>The jobs include metal work, wood work, machining, upholstery, painting, electrical wiring, fitting of air brakes, track work, administration, museum guides and streetcar operations. <br><br>From May to October streetcars operate in Fort Edmonton Park and on the High Level Bridge with extended hours during the excitement of the Fringe Festival. Drivers and conductors who enjoy people and have a love for the history of Edmonton are needed to keep these operations running smoothly. <br><br>New and dedicated members are always welcome! The ERRS has a lively operating schedule, and lack of work will never be a problem. The society promotes major efforts to rebuild and operate historic streetcars, to obtain or manufacture missing parts thereby enabling future generations to carry on the restoration work.<br><br>It is this continued volunteer effort, which keeps Edmonton's history alive!</p>
 					</div>
 				</div>
 
-				<div class="z-index-1 half-space-below">
+				<div class="z-index-1 half-space-below sm-hide">
 					<img src="Images/OldStreetcarPhoto_2.png" class="img-full-vw">
 				</div>
-				<div class="z-index-1 half-space-below">
+				<div class="z-index-1 half-space-below sm-hide">
 					<img src="Images/Edmonton1_1.png" class="img-full-vw">
 				</div>
-				<div class="z-index-1 half-space-below">
+				<div class="z-index-1 half-space-below sm-hide">
 					<img src="Images/Edmonton42_1.png" class="img-full-vw">
 				</div>
-				<div class="z-index-1">
+				<div class="z-index-1 sm-hide">
 					<img src="Images/EarlyWork_1.png" class="img-full-vw">
 				</div>
 			</section>
 
-
 		</main>
 
-		<main class="streetcars-pg pg-selector-span">
+
+		<!-- STREETCARS PAGE (if showing) -->
+
+		<main class="streetcars-pg pg-selector-span fix-margin sm-position-relative sm-z-index-2">
 			<!-- HERO -->
 			<section class="container position-relative">
 				<div class="hero-section-learn display-flex z-index-3 flex-stack">
@@ -127,6 +146,9 @@
 			
 			</section>
 
+
+			<!-- WHAT IS A STREETCAR SECTION -->
+
 			<section class="short-img-grid container space-below"> 
 
 				<div class="short-grid-left">
@@ -135,7 +157,7 @@
 
 				<div class="short-grid-right">
 					<div class="narrow-txt-box">
-						<h3 class="txt-uppercase">What is a Streetcar?</h3>
+						<h3 class="txt-uppercase sm-text-center">What is a Streetcar?</h3>
 						<p>A streetcar is a public transportation vehicle (car) that runs on rails laid down on the street. It can also be called a trolley or a trolley-car, and outside North America in English speaking countries it is referred to as a tram or tramcar.</p>
 					
 					</div>
@@ -145,6 +167,8 @@
 			</section>
 
 
+			<!-- STREETCARS vs LRTs SECTION -->
+
 			<section class="short-img-grid container space-below"> 
 
 				<div class="short-grid-left">
@@ -153,7 +177,7 @@
 
 				<div class="short-grid-right">
 					<div class="narrow-txt-box">
-						<h3 class="txt-uppercase">Streetcars vs. LRTs</h3>
+						<h3 class="txt-uppercase sm-text-center">Streetcars vs. LRTs</h3>
 						<p>Many modern streetcar lines use new rolling stock that is not very different from urban LRT rolling stock. However, they are distinct from high-floor and low-floor LRT in how they are constructed and run. <br><br>High-floor LRTs are characterized by high-floor rolling stock that requires specialized platforms for the loading and unloading of passengers. These lines require greater infrastructural investments (e.g. big stations) than streetcars or low-floor LRT lines. Because of this, stops are typically spaced further apart than streetcar or low-floor LRT stops. Stations are often 600 meters apart.</p>
 					
 					</div>
@@ -181,10 +205,12 @@
 			</section>
 
 
+			<!-- STREETCAR HISTORY SECTION -->
+
 			<section class="container space-above position-relative">
-				<div class="row margin z-index-2">
-					<div class="col col-lg-5 long-txt-box">
-						<h3>Streetcars History</h3>
+				<div class="row margin z-index-2 sm-justify-content-center">
+					<div class="col col-lg-5 long-txt-box col-sm-12 sm-position-static">
+						<h3 class="sm-text-center">Streetcars History</h3>
 						<h4 class="p txt-bold">How it began</h4>
 						<p>In New York around 1830 a young Irishman, John Stephenson, had a brainwave! Why not run a railroad along a street? He developed the idea and the first public streetcar line was opened in New York on November 26, 1832. The cars were hauled by horses.<br><br>The "street railway" idea slowly began to spread. New Orleans ran its first streetcars in 1834, and by the 1880's most major cities in the U.S. and Europe were running horse-drawn streetcars. Their great advantage over horse-drawn omnibuses was the "smooth" ride provided by steel wheels running on steel rails. Bus passengers had a dreadful ride over very uneven and rutted street surfaces.<br><br>Although early streetcars were horse-drawn, other methods of motion were included cable haulage (still in use in San Francisco) and steam haulage (especially in the British Isles and Europe where the cars were actually towed by small steam engines along the streets!) These early modes of traction were soon to become obsolete because of the new miracle of the age - electricity!<br><br><br></p>
 						<h4 class="p txt-bold">The Electric Era</h4>
@@ -198,26 +224,29 @@
 
 
 
-				<div class="z-index-1 half-space-below">
+				<div class="z-index-1 half-space-below sm-hide">
 					<img src="Images/HorseDrawnTram.png" class="img-full-vw">
 				</div>
-				<div class="z-index-1 half-space-below">
+				<div class="z-index-1 half-space-below sm-hide">
 					<img src="Images/SteamEngine_DoubleDeckerTram_1.png" class="img-full-vw">
 				</div>
-				<div class="z-index-1 half-space-below">
+				<div class="z-index-1 half-space-below sm-hide">
 					<img src="Images/Streetcar_1.png" class="img-full-vw">
 				</div>
-				<div class="z-index-1 half-space-below">
+				<div class="z-index-1 half-space-below sm-hide">
 					<img src="Images/SanFran_PCCcars_1.png" class="img-full-vw">
 				</div>
-				<div class="z-index-1 half-space-below">
+				<div class="z-index-1 half-space-below sm-hide">
 					<img src="Images/SwissStandardCar.png" class="img-full-vw">
 				</div>
-				<div class="z-index-1 half-space-below">
+				<div class="z-index-1 half-space-below sm-hide">
 					<img src="Images/LRT_1.webp" class="img-full-vw">
 				</div>
 				
 			</section>
+
+
+			<!-- MEET THE FLEET CTA SECTION -->
 
 			<section class="container double-space-above space-below">
 				<div class="row row-justify-center">
@@ -233,7 +262,10 @@
 
 		</main>
 
-		<main class="timeline-pg pg-selector-span"> <!-- Not doing this page -->
+
+		<!-- HISTORY TIMELINE PAGE (if showing - but I did not make this page) -->
+
+		<main class="timeline-pg pg-selector-span fix-margin sm-position-relative sm-z-index-2"> <!-- (This page I am not doing) -->
 			<!-- HERO -->
 			<section class="container position-relative">
 				<div class="flex-stack hero-section-learn display-flex z-index-3">
@@ -248,7 +280,10 @@
 			</section>
 		</main>	
 
-		<main class="hl-bridge-pg pg-selector-span"> <!-- Not doing this page -->
+
+		<!-- HIGH LEVEL BRIDGE PAGE (if showing - but I did not make this page either) -->
+
+		<main class="hl-bridge-pg pg-selector-span fix-margin sm-position-relative sm-z-index-2"> <!-- (This page I am not doing) -->
 			<!-- HERO -->
 			<section class="container position-relative">
 				<div class="flex-stack hero-section-learn display-flex z-index-3">
@@ -263,7 +298,10 @@
 			</section>
 		</main>
 
-		<main class="blogs-pg pg-selector-span">
+
+		<!-- BLOGS PAGE (if showing) -->
+
+		<main class="blogs-pg pg-selector-span fix-margin sm-position-relative sm-z-index-2">
 			<!-- HERO -->
 			<section class="container position-relative">
 				<div class="flex-stack hero-section-learn display-flex z-index-3">
@@ -279,11 +317,14 @@
 			
 			</section>
 
+
+			<!-- BLOG LINKS SECTION -->
+
 			<section class="margin double-space-below">
 				<div class="container">
-					<div class="row quarter-space-below">
+					<div class="row quarter-space-below sm-justify-content-center">
 						
-						<div class="col col-lg-4 blog-hover">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/new-streetcars-parades-and-exclusive-tours-on-saturday-june-7">
 								<h3 class="blogs-txt-boxes txt-black txt-uppercase line-height-100" style="background-color: #3F82C7;">New streetcars,<br> Parades, and Exclusive Tours on Saturday, June 7th!</h3>
 								<div class="blogs-img-box">
@@ -294,7 +335,7 @@
 						
 							
 						
-						<div class="col col-lg-4 blog-hover">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/the-mckernan-line-edmonton-s-toonerville-trolley">
 								<h3 class="blogs-txt-boxes txt-black txt-uppercase line-height-100" style="background-color: #C0C0C0;">The McKernan Line: <br>Edmonton's Toonerville Trolley</h3>
 								<div class="blogs-img-box">
@@ -303,7 +344,7 @@
 							</a>
 						</div>
 				
-						<div class="col col-lg-4 blog-hover">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/important-work-on-the-high-level-bridge">
 								<h3 class="blogs-txt-boxes txt-light txt-uppercase line-height-100" style="background-color: #101811;">Important Work <br>on the High Level Bridge</h3>
 								<div class="blogs-img-box">
@@ -316,8 +357,8 @@
 					</div>
 
 
-					<div class="row quarter-space-below">
-						<div class="col col-lg-4 blog-hover">
+					<div class="row quarter-space-below sm-justify-content-center">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/preparing-the-trackway-for-our-operating-season">
 								<h3 class="blogs-txt-boxes txt-black txt-uppercase line-height-100" style="background-color: #428AD1;">Preparing the <br>Trackway for our Operating Season</h3>
 								<div class="blogs-img-box">
@@ -328,7 +369,7 @@
 						
 
 					
-						<div class="col col-lg-4 blog-hover">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/two-early-christmas-presents">
 								<h3 class="blogs-txt-boxes txt-light txt-uppercase line-height-100" style="background-color: #412B2E;">Our Next <br>Restoration project is beginning soon!</h3>
 								<div class="blogs-img-box">
@@ -337,7 +378,7 @@
 							</a>
 						</div>
 
-						<div class="col col-lg-4 blog-hover">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/melbourne-930-gets-some-love">
 								<h3 class="blogs-txt-boxes txt-black txt-uppercase line-height-100" style="background-color: #AD8853;">Melbourne 930 <br>gets some love</h3>
 								<div class="blogs-img-box">
@@ -348,8 +389,8 @@
 							
 					</div>
 
-					<div class="row quarter-space-below">
-						<div class="col col-lg-4 blog-hover">
+					<div class="row quarter-space-below sm-justify-content-center">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/errs-streetcar-1-in-the-air">
 								<h3 class="blogs-txt-boxes txt-light txt-uppercase line-height-100" style="background-color: #725B4E;">ERRS Streetcar #1 <br>... airborn</h3>
 								<div class="blogs-img-box">
@@ -358,7 +399,7 @@
 							</a>
 						</div>
 						
-						<div class="col col-lg-4 blog-hover">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/the-journey-of-err-streetcar-1">
 								<h3 class="blogs-txt-boxes txt-black txt-uppercase line-height-100" style="background-color: #EFEBDF;">The Journey of <br>Streetcar #1</h3>
 								<div class="blogs-img-box">
@@ -367,7 +408,7 @@
 							</a>
 						</div>
 
-						<div class="col col-lg-4 blog-hover">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/errs-is-busy-getting-ready-for-spring">
 								<h3 class="blogs-txt-boxes txt-black txt-uppercase line-height-100" style="background-color: #809FC3;">ERRS Getting<br> Ready for Spring</h3>
 								<div class="blogs-img-box">
@@ -378,8 +419,8 @@
 							
 					</div>
 
-					<div class="row quarter-space-below">
-						<div class="col col-lg-4 blog-hover">
+					<div class="row quarter-space-below sm-justify-content-center">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/progress-on-saskatoon-200">
 								<h3 class="blogs-txt-boxes txt-light txt-uppercase line-height-100" style="background-color: #4A3626;">Progress on <br>Snowsweeper Car Saskatoon 200...</h3>
 								<div class="blogs-img-box">
@@ -388,7 +429,7 @@
 							</a>
 						</div>
 						
-						<div class="col col-lg-4 blog-hover">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/amalgation-of-edmonton-and-strathcona">
 								<h3 class="blogs-txt-boxes txt-black txt-uppercase line-height-100" style="background-color: #CFCCC4;">The Amalgamation <br>of Edmonton and Strathcona</h3>
 								<div class="blogs-img-box">
@@ -397,7 +438,7 @@
 							</a>
 						</div>
 						
-						<div class="col col-lg-4 blog-hover">
+						<div class="col col-lg-4 blog-hover col-sm-11">
 							<a href="https://www.edmontonstreetcars.ca/ever-heard-of-a-streetcar-conductorette">
 								<h3 class="blogs-txt-boxes txt-light txt-uppercase line-height-100" style="background-color: #6E5C3E;">Exploring <br>Edmonton's Transit Heritage: The story of Streetcar Conductorettes</h3>
 								<div class="blogs-img-box">
@@ -427,27 +468,36 @@
 				<p class="txt-light">Edmonton Radial Railway Society<br>P.O. Box 76057 Southgate P.0<br>Edmonton, Alberta T6H 5Y7</p>
 			</div>
 
-			<div class="span-3">
+			<div class="span-3 sm-hide">
 				<ul>
-					<li><a href="PlanTrip.html" class="txt-light ">Plan a Trip</a></li>
+					<li><a href="PlanTrip.html" class="txt-light sm-start-row-1-col-3">Plan a Trip</a></li>
 					<li><a href="Learn.html" class="txt-light">Learn</a></li>
 				</ul>
 			</div>
-			<div class="span-3 display-flex">
+			<div class="span-3 display-flex sm-hide">
 				<ul>
 					<li><a class="txt-light">Get Involved</a></li>
 					<li><a class="txt-light">Donate</a></li>
 				</ul>
 			</div>
-			<div class="span-3 footer-padding">
+			<div class="span-3 footer-padding sm-hide">
 				<a class="txt-light">FAQs</a>
+			</div>
+			<div class="small-footer-list">
+				<ul>
+					<li><a href="PlanTrip.html" class="txt-light sm-start-row-1-col-3">Plan a Trip</a></li>
+					<li><a href="Learn.html" class="txt-light">Learn</a></li>
+					<li><a class="txt-light">Get Involved</a></li>
+					<li><a class="txt-light">Donate</a></li>
+					<li><a class="txt-light">FAQs</a></li>
+				</ul>
 			</div>
 			<div class="span-2 footer-padding">
 				<a class="txt-Members">For Members</a>
 			</div>
 
 		</div>
-		<p class="txt-gold">The Edmonton Radial Railway Society operates on Treaty 6 territory, a traditional meeting grounds, gathering place, and travelling route to the Cree, Saulteaux, Blackfoot, Métis, Dene and Nakota Sioux. We acknowledge all the many First Nations, Métis, and Inuit whose footsteps have marked these lands for centuries.</p>
+		<p class="txt-gold sm-text-center">The Edmonton Radial Railway Society operates on Treaty 6 territory, a traditional meeting grounds, gathering place, and travelling route to the Cree, Saulteaux, Blackfoot, Métis, Dene and Nakota Sioux. We acknowledge all the many First Nations, Métis, and Inuit whose footsteps have marked these lands for centuries.</p>
 	</footer>
 
 	

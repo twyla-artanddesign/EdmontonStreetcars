@@ -8,6 +8,11 @@ body {
 	margin-right: 6vw;
 }
 
+.section-padding {
+	padding-left: 6vw;
+	padding-right: 6vw;
+}
+
 
 .header-container {
 	width: 100%;
@@ -135,7 +140,7 @@ body {
 		margin: auto;
 	}
 
-	.col {
+	.sm-col {
 		padding: 0;
 	}
 
