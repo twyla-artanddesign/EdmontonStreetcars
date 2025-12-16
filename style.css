@@ -1350,9 +1350,6 @@ footer li {
 	padding-bottom: 22vh;
 }
 
-.hide-overflow {
-	overflow: hidden;
-}
 
 
 
@@ -1473,6 +1470,10 @@ footer li {
 .no-padding-horizontal {
 	padding-left: 0;
 	padding-right: 0;
+}
+
+.hide-overflow {
+	overflow: hidden;
 }
 
 
@@ -1775,8 +1776,8 @@ footer li {
 		height: 40vh;
 	} 
 
-	.sm-section-history {
-		height: 237vh;
+	.sm-section-history { /* For some reason this does not work in a duckduckgo browser */
+		height: 237vh; 
 	}
 
 	.hero-learn-offset-5 {

@@ -289,22 +289,22 @@
 					<div class="col col-lg-7 col-sm-12 smaller-space-above">
 
 						<!-- Desktop Direction/Route Radio Buttons --> 
-	<!-- !!!!!!! Why are these radio buttons not clickable for desktop??? !!!!!! -->
 						<div class="row sm-hide">
 							<div class="col col-lg-12 align-flex-start">
 								<input id="hlb-route" type="radio" name="route-planner" class="radio-buttons">
-								<img src="Images/checked.png" class="radio-checked radio-button-route-planner hover-pointer" alt="The radio button for the High Level Bridge Route is selected"><img src="Images/unchecked.png" class="radio-unchecked radio-button-route-planner hover-pointer" alt="A radio button to select the High Level Bridge Route Option"><label for="hlb-route" class="h3 txt-black line-height-100 hover-pointer">High-Level Bridge Route</label>
+								<img src="Images/checked.png" class="radio-checked radio-button-route-planner" alt="The radio button for the High Level Bridge Route is selected"><img src="Images/unchecked.png" class="radio-unchecked radio-button-route-planner hover-pointer" alt="A radio button to select the High Level Bridge Route Option"><label for="hlb-route" class="h3 txt-black line-height-100">High-Level Bridge Route</label>
 							</div>
 						</div>
 						<div class="row sm-hide">
 							<div class="col col-lg-12 align-flex-start">
 								<input id="fep-route" type="radio" name="route-planner" class="radio-buttons radio-button-route-planner">
-								<img src="Images/checked.png" class="radio-checked radio-button-route-planner hover-pointer" alt="The radio button for the Fort Edmonton Park Route is selected"><img src="Images/unchecked.png" class="radio-unchecked radio-button-route-planner hover-pointer" alt="A radio button to select the Fort Edmonton Park Route Option">
+								<img src="Images/checked.png" class="radio-checked radio-button-route-planner" alt="The radio button for the Fort Edmonton Park Route is selected"><img src="Images/unchecked.png" class="radio-unchecked radio-button-route-planner" alt="A radio button to select the Fort Edmonton Park Route Option">
 								<label for="fep-route" class="h3 txt-black line-height-100 hover-pointer">Fort Edmonton Park</label>
 							</div>
 						</div>
 
-						<!-- Time pickers -->
+						<!-- Time pickers -->   
+							<!-- Note: Default time pickers change size depending on the device (and/or browser) used, and may not fit well in their intended area -->
 						<div class="row sm-no-margin-top">
 							<div class="col col-lg-11 align-flex-start time-note-input-box justify-space-between justify-content-center align-items-center col-sm-12">
 								<p class="txt-uppercase line-height-100">Between</p>
@@ -312,7 +312,7 @@
 									<input type="time" name="time-start" class="p time-box" value="10:00">
 
 									<input id="am1" type="radio" name="time-start" class="radio-buttons am-button sm-hide" checked>
-									<label for="am" class="p txt-light inline-block sm-hide">AM</label> 
+									<label for="am" class="p txt-light inline-block sm-hide">AM</label> <!-- Note: clickable/hover area is way to the right of this element, likely because of it's negative margins (?) - even though the second AM hover/clickable area seems fine.. I am not sure how to fix this -->
 
 									<input id="pm1" type="radio" name="time-start" class="radio-buttons pm-button sm-hide">
 									<label for="pm1" class="p txt-light inline-block sm-hide">PM</label>
