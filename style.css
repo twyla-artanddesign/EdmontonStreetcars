@@ -110,10 +110,6 @@ a {
 	font-weight: 700;
 }
 
-.button-text {
-	font-weight: 600;
-}
-
 .txt-black {
 	color: #000000;
 }
@@ -652,16 +648,6 @@ nav li {
 		margin-top: -20px;
 	}
 
-.calendar-month-arrow-box {
-	height: 6vh;
-	width: 6vh;
-	text-align: center;
-	background-color: #D7C197;
-	margin-left: 1.2vw;;
-	margin-right: 1.2vw;;
-	border-radius: 100px;
-}
-
 .calendar-grid {
 	display: grid;
 	grid-template: repeat(6, 1fr) / repeat(7, 1fr);
@@ -1125,7 +1111,7 @@ footer li {
 	width: 100px;
 }
 
-.logo-margin{
+.logo-margin {
 	margin-top: 2vh;
 }
 
@@ -1202,12 +1188,6 @@ footer li {
 
 .max-h-80 {
 	max-height: 80vh;
-}
-
-
-.width-60vw {
-	width: 60vw;
-	max-height: 100%;
 }
 
 .img-box {
@@ -1427,10 +1407,6 @@ footer li {
 	height: 82vh;
 }  
 
-.section-height-70 {
-	height: 70vh;
-}
-
 .display-flex {
 	display: flex;
 }
@@ -1465,11 +1441,6 @@ footer li {
 
 .no-padding-left {
 	padding-left: 0;
-}
-
-.no-padding-horizontal {
-	padding-left: 0;
-	padding-right: 0;
 }
 
 .hide-overflow {
@@ -1614,14 +1585,12 @@ footer li {
 		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 10vw), 50% 100%, 0% calc(100% - 10vw));
 	}
 
-	.hero-box-learn { /* Unchanged so far except height*/
+	.hero-box-learn {
 		max-height: 30vh;
-		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 10vw), 50% 100%, 0% calc(100% - 10vw));
 	}
 
-	.hero-box-otherpages { /* Unchanged so far except height*/
+	.hero-box-otherpages { 
 		max-height: 25vh;
-		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 10vw), 50% 100%, 0% calc(100% - 10vw));
 	}
 
 	.narrow-txt-box {
@@ -1630,7 +1599,6 @@ footer li {
 		padding-top: 1vh;
 		padding-left: 14vw;
 		padding-right: 14vw;
-		padding-bottom: 7vh;
 	}
 
 	.sm-txt-box-flat-bottom {
@@ -1658,6 +1626,7 @@ footer li {
 		padding-left: .5em;
 		padding-right: .5em;
 		border-radius: .5vw;
+		max-width: 90%;
 	}
 
 	.routes-txt-box-1 {
@@ -1703,7 +1672,7 @@ footer li {
 	}
 
 	.streetcar-and-direction-box {
-		width: 72%;
+		width: 69.5%;
 		height: 7em;
 		clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 20px), 50% 100%, 0% calc(100% - 20px));
 	}
@@ -1776,7 +1745,7 @@ footer li {
 		height: 40vh;
 	} 
 
-	.sm-section-history { /* For some reason this does not work in a duckduckgo browser */
+	.sm-section-history { /* For some reason this does not work on my mobile's duckduckgo browser */
 		height: 237vh; 
 	}
 
@@ -1849,7 +1818,7 @@ footer li {
 		margin-top: 2.8vh;
 	}
 
-	.neg-margin-medium {
+	.neg-margin-medium { /* This is not a great way to fix the spacing here, but I am too short on sleep to figure out a better way... */
 		margin-top: -6.2vh;
 	}
 
@@ -1882,10 +1851,6 @@ footer li {
 		margin-top: 8vh;
 	}
 
-	.space-above { /* Unchanged so far */
-		margin-top: 10vh;
-	}
-
 	.sm-margin-bottom-adjust { /* This is not a great way to fix the spacing here, but I am too short on sleep to figure out a better way... */
 		margin-bottom: -50vh;
 	}
@@ -1906,36 +1871,8 @@ footer li {
 		padding-top: 2vh;
 	}
 
-	.half-space-above { /* Unchanged so far */
-		margin-top: 5vh;
-	}
-
-	.quarter-space-above { /* Unchanged so far */
-		margin-top: 2.5vh;
-	}
-
 	.sm-no-margin-top {
 		margin-top: 0;
-	}
-
-	.double-space-below { /* Unchanged so far */
-		margin-bottom: 20vh;
-	}
-
-	.space-below { /* Unchanged so far */
-		margin-bottom: 10vh;
-	}
-
-	.sm-space-below {
-		margin-bottom: -16vh;
-	}
-
-	.sm-half-space-below {
-		margin-bottom: 5vh;
-	}
-
-	.quarter-space-below { /* Unchanged so far */
-		margin-bottom: 2.5vh;
 	}
 
 	/* FOOTER */
