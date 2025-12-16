@@ -206,9 +206,8 @@ a {
 /* NAV */
 
 header {
-		position: relative;
-		align-content: flex-end;
-		padding-left: 10vw;
+	position: relative;
+	align-content: flex-end;
 }
 
 .header-padding-1 {
@@ -218,6 +217,10 @@ header {
 .header-padding-2 {
 	padding-top: 6.5vh;
 }
+
+.header-container {
+		width: auto;
+	}
 
 nav {
 	font-family: "Tomorrow", sans-serif;
@@ -922,6 +925,10 @@ nav li {
 	color: #F8F7E8;
 }
 
+.overflow-x-hidden {
+	overflow-x: hidden;
+}
+
 
 
 
@@ -1310,7 +1317,7 @@ footer li {
 }
 
 .acessibility-txt-box2 {
-	height: 75vh;
+	height: 85vh;
 	box-sizing: border-box;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -1513,6 +1520,9 @@ footer li {
 	background-color: #F8F7E8;
 	z-index: 4;
 }
+
+
+
 
 /* MOBILE BREAKPOINT */
 
@@ -1859,6 +1869,10 @@ footer li {
 		margin-top: 5vh;
 	}
 
+	.sm-padding-above {
+		padding-top: 5vh;
+	}
+
 	.smaller-space-above {
 		margin-top: 3vh;
 	}
@@ -1977,12 +1991,6 @@ footer li {
 .route-hover:hover {
 
 }
-
-
-
-
-
-
 
 
 
